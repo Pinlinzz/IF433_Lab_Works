@@ -15,12 +15,18 @@ fun main (args: Array<String>){
 
     //Logic Check
     checkSize(area)
+    println("Circle Size: ${checkSize(area)}")
 }
 
-fun checkSize(area: Double) {
+// ubah function checkSize ngebalikin string, bkan ngeprint
+fun checkSize(area: Double) = if (area > 100) "This is a Big Circle" else "This is a Small Circle"
+
+/*fun checkSize(area: Double) {
     if (area > 100) {
         println("This is a Big Circle")
-    }else {
+    } else {
         println("This is a Small Circle")
     }
 }
+ */
+
