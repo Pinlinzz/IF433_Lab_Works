@@ -25,7 +25,7 @@ fun main () {
     // Jika null, gunakan nili defailt 0
     val idLength = studentId?.length ?: 0
     println("Panjang Id: $idLength")
-}
+}   
 
 // Tulis DI LUAR main()
 fun calcultedStatus(score : Int) = if (score > 75) "Lulus" else "Tidak Lulus"
