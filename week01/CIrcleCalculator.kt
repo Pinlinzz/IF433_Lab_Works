@@ -3,14 +3,15 @@ package oop_110239_VincentAndreeson.week01
 fun main (args: Array<String>){
     // variable definition
 
-    var radius : Double = 7.0
-    var pi : Double = 3.14
+    val radius = 7.0 //diubah yang awalnya var jadi val
+    val pi  = 3.14
 
     //Calculation
-    var area: Double = pi * radius * radius
+    val area = pi * radius * radius
 
     // Output Concantetaion
-    println("Radius: " + radius + ", Area: " + area)
+    //println("Radius: " + $radius + ", Area: " + $area)
+    println("Radius: $radius, Area: $area")
 
     //Logic Check
     checkSize(area)
