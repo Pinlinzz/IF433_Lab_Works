@@ -9,6 +9,11 @@ fun main() {
     val gameTitle = "BuburLegend"
 
     calculateDiscounted(price)
+    printReceipt(
+        title = gameTitle,
+        price = price,
+        finalPrice = calculateDiscounted(price)
+    )
 }
 
 fun calculateDiscounted(price: Int): Double = when {
@@ -16,3 +21,9 @@ fun calculateDiscounted(price: Int): Double = when {
     else -> price * 0.9          // Diskon 10%, maka bayar 90%
 }
 
+fun printReceipt(title: String, price: Int, finalPrice: Double ) {
+    println("=== Invoice Game ===")
+    println("Judul        : $title")
+    println("Harga Asli   : Rp$price")
+    println("Harga Akhir  : Rp$finalPrice")
+}
