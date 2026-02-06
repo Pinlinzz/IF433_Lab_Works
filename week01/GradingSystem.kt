@@ -1,8 +1,14 @@
 package oop_110239_VincentAndreeson.week01
 
 fun main () {
-    var name: String = "John Thor"
-    var score: Int = 80
+    //REFATOR: GUNAKAN Val dan hapus tipe data eksplisit
+    var name = "John Thor"
+    var score = 80
 
-    println("Nama: " + name + ", Nilai: " + score)
+    // Concatenation  gaya lama
+    //println("Nama: " + name + ", Nilai: " + score)
+
+    // REFACTOR : String Template ($name)
+    println("Nama: $name, Nilai: $score")
+
 }
