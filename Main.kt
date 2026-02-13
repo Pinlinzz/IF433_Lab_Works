@@ -2,7 +2,6 @@ package oop_110239_VincentAndresson.week02
 
 
 import java.util.Scanner
-
 fun main() {
     val scanner = Scanner(System.`in`)
 
@@ -17,7 +16,7 @@ fun main() {
     scanner.nextLine() //Bersihkan buffer newline (Penyakit klasik scanner)
 
     if(nim.length != 5){
-        println("ERROR: p+Pendaftaran dibatalkan. NIM harus 5 karakter")
+        println("ERROR: Pendaftaran dibatalkan. NIM harus 5 karakter")
         //Program berhenti di sini utnuk mahasiswa ini, tidk membuat objek baru
     }
     else {
