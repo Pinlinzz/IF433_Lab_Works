@@ -1,7 +1,5 @@
 package oop_110239_VincentAndresson.week02
 
-import kotlin.time.Duration
-
 class Loan (
     val bookTitle : String,
     var borrower : String,
