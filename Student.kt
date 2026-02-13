@@ -3,7 +3,7 @@ package oop_110239_VincentAndresson.week02
 class Student (
     val name : String,
     val nim : String,
-    val major : String
+    var major : String
 ) {
     init {
         // Validasi Sederhana : Cek panjang NIM
@@ -15,4 +15,11 @@ class Student (
         }
 
     }
+
+    //secondary conductor
+    //Wajib memanggil Primary Conductorm menggunakan this
+    constructor(name : String, nim: String): this(name, nim, major = "Non-Matriculated"){
+        println("LOG: Menggunakan constructor jalur umum (Tanpa Jurusan).")
+    }
+
 }
