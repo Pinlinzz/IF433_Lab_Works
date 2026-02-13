@@ -2,8 +2,9 @@ package oop_110239_VincentAndresson.week02
 
 class Hero (
     val name : String,
+    var baseDamage : Int,
     var hp : Int =  100, //defaultnya disetel ke 100
-    var baseDamage : Int
+
 ) {
     fun attack(targetName: String) {
         println(">> $name menyerang $targetName dengan damage $baseDamage!")
