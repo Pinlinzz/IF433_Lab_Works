@@ -9,13 +9,14 @@ class Student(
     init {
         if (nim.length != 5) {
             println("WARNING: Object tercipta dengan NIM($nim) yang tidak valid.")
+            println("Data Mahasiswa $name mungkin akan bermasalah dalam sistem")
         } else {
             println("LOG: Objek Student $name berhasil dialokasikan di Memory.")
         }
     }
 
     // Secondary Constructor (Pastikan spelling-nya benar: constructor)
-    constructor(name: String, nim: String) : this(name, nim, major = "Non-Matriculated", gpa = 3.8) {
+    constructor(name: String, nim: String) : this(name, nim, major = "Non-Matriculated") {
         println("LOG: Menggunakan constructor jalur umum (Tanpa Jurusan).")
     }
 }

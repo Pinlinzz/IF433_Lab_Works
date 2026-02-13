@@ -13,6 +13,26 @@ fun main() {
     println("Masukan NIM (Wajib 5 Karakter): ")
     val nim = scanner.next()
 
+    print("Pilih Jalur (1. Reguler, 2. Umum): ")
+    val type = scanner.nextInt()
+    scanner.nextLine() //consume Newline
+
+    if(type == 1){
+        print("Masukan Jurusan: ")
+        val major = scanner.nextLine()
+        //Memanggil Primary Constructor
+        val s1 = Student(name, nim, major)
+        println("Terdaftardi ${s1.major} dengna GPA awal ${s1.gpa}")
+    }
+
+    else if (type == 2){
+        //memanggil Secondary Construcor, jruusan otomatis "Non-Matricurated"
+        val s2 = Student(name, nim)
+        println("Terdaftar di: ${s2.major} dengan GPA awal ${s2.gpa}")
+    } else {
+        println("Pilihan Ngawur, pendaftaran BATAL! 💀💀")
+    }
+
     scanner.nextLine() //Bersihkan buffer newline (Penyakit klasik scanner)
 
     if(nim.length != 5){
