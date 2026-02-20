@@ -1,6 +1,8 @@
 package oop_110239_VincentAndresson.week03
 
-class Employee(name: String) {
+import kotlin.times
+
+class Employee(val name: String) {
     var salary: Int = 0
         set(value) {
             if (value < 0) {
@@ -10,19 +12,20 @@ class Employee(name: String) {
                 field = value
             }
         }
+
+    private var performanceRating: Int = 3
+
+    fun increasePerformance() {
+        performanceRating++
+        println("Kinerja $name meningkat! Rating: $performanceRating")
+    }
+
+    fun printStatus() {
+        println("Karyawan $name, Rating: $performanceRating")
+    }
+
+    val tax: Double
+        get() = salary * 0.01
 }
 
-private var performanceRating: Int = 3
-
-fun increasePerformance() {
-    performanceRating++
-    println("Kinerja $name meningkat! Rating: $performanceRating")
-}
-
-fun printStatus() {
-    println("Karyawan $name, Rating: $performanceRating")
-}
-
-val tax: double
-    get() = salary * 0.01
 

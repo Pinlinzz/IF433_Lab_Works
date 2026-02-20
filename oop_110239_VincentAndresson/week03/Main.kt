@@ -6,7 +6,7 @@ fun main() {
     // e.salary = 5000 // ini akan meledakan program anda
 
     // 1. test validasi salary
-    e.salary = -1000 // Harunsya ini bakal jadi error
+    //e.salary = -1000 // Harunsya ini bakal jadi error
     e.salary = 5000000
     println("Gaji: ${e.salary}")
 
