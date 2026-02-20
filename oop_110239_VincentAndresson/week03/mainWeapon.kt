@@ -25,7 +25,7 @@ fun main() {
     println("Final Damage : ${myWeapon.damage}")
     println("Tier Senjata : ${myWeapon.tier}")
 
-    println("----------------------------------------------")
+    println("---------------------------------------------")
     println("------ INISIASI PLAYER ------")
     // ------ INISIASI PLAYER ------
 
