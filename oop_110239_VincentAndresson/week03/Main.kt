@@ -12,7 +12,7 @@ fun main() {
 
     //2. test Encapsulation
     e.increasePerformance()
-    //e.performanceRating = 5 // kalau di uncomment harusnya nya merah, karna ini tuh private
+    //e.performanceRating = 5 // kalau di uncomment harusnya nya merah, karna ini tuh private 🫵
 
     println("Pajak yang harus dibayar: ${e.tax}")
 }
