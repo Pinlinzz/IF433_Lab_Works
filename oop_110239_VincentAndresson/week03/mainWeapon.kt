@@ -24,4 +24,33 @@ fun main() {
     println("Nama Senjata : ${myWeapon.name}")
     println("Final Damage : ${myWeapon.damage}")
     println("Tier Senjata : ${myWeapon.tier}")
+
+    println("----------------------------------------------")
+    println("------ INISIASI PLAYER ------")
+    // ------ INISIASI PLAYER ------
+
+    val player = Player("Mas Gatot")
+
+    println("Status Awal Player:")
+    println("Username : ${player.username}")
+    println("Level    : ${player.level}")
+    println("----------------------------------------------")
+
+    // Testing 50Xp
+    println("Menambahkan 50Xp")
+    player.addXp(50)
+
+    // Testing -50Xp
+    println("Menambahkan -50Xp")
+    player.addXp(-50)
+
+    // addXp(60)
+    println("Menambah 60 XP...")
+    player.addXp(60)
+
+    println("----------------------------------------------")
+    println("Status Akhir Player:")
+    println("Level Sekarang: ${player.level}")
+
+
 }

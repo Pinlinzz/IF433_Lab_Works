@@ -16,8 +16,10 @@ class Player(val username: String) {
 
         xp += ammount
         if(level > levelSebelumnya) {
-            println("Level Up! selamat $username naik ke level $level")
+            println("Level Up! $username naik ke level $level")
         }
+
+        println("Level saat ini ${level}")
     }
 
     fun displayStatus(){
