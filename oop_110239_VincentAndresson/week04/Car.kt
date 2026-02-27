@@ -14,6 +14,6 @@ open class Car (brand: String, val numberOfDoors: Int) : Vehicle(brand) {
     override fun acclerate(){
         super.acclerate() // ngemabbil logik penambahan kecepatan milik parent
             // jadi super.methodName() itu buat maggil versi asli dari Parent class
-            Println("Mobil $brand menggunakan transmisi gigi untuk menambah kecepatan")
+            println("Mobil $brand menggunakan transmisi gigi untuk menambah kecepatan")
     }
 }
