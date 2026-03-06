@@ -16,6 +16,15 @@ fun main() {
         // Testing payment pertama
         payment.processPayment(tagihan)
 
+        // Smart Casting
+        if (payment is EWallet) {
+            println("Mendeteksi E-Wallet... Mencoba Top Up otomatis.")
+            payment.topUp(50000.0)
+
+            println("Mencoba memproses pembayaran ulang...")
+            payment.processPayment(tagihan)
+        }
+
         println()
     }
 }
