@@ -6,7 +6,7 @@ import jdk.jfr.DataAmount
 
 fun processCheckout(method: PaymentMethod, amount: Double) {
     println(" --> Memulai Checkout....")
-    method.pay(amount) // DYnamic polymorphism in action
+    method.pay(amount) // DYnamic polymorphism in actio
 }
 
 fun main () {
