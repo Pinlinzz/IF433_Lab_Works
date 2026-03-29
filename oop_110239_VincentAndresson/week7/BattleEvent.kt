@@ -1,0 +1,8 @@
+package oop_110239_VincentAndresson.week7
+
+sealed class BattleState {
+    data class MonsterEncounter(val monsterName: String) : BattleState()
+    data class LootDropped(val item: GameItem) : BattleState()
+    data class GameOver(val reason: String) : BattleState()
+    object SafeZone : BattleState() // Pakai object karena tidak butuh data payload
+}
