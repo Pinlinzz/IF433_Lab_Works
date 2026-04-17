@@ -8,7 +8,7 @@ fun main() {
     val destination = emptyOrder.deliveryDetails?.address?.city?.name?: "Kota Tidak Diketahui"
     println("Tujuan pengiriman : $destination")
 
-    println("\n=== TEST LET BOCK ===")
+    println("\n=== TEST LET BLOCK ===")
     val validOrder = Order(null, 250000)
 
     val receipt = validOrder.totalPrice?.let {
@@ -22,7 +22,7 @@ fun main() {
     val mixedData: List<Any> = listOf (
         "Smartphone",
         150000,
-        UserProfile("Andi", null)
+        UserProfile("Andi", null),
         "Laptop",
         450000.0
     )
