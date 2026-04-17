@@ -59,6 +59,12 @@ fun main() {
     } catch(e: IllegalArgumentException) {
         println(e.message) //Mencetak pesan custom kita, bukan crash buta
     }
+
+    println("\n=== TETS JAVA INTERLOP ===")
+    val javaResponse = LegacyJavaApi.fetchServerStatus()
+    // kita menekan tombol !! kareta KITA TAHU implementasi Java-nya aman
+    val statusLength = javaResponse!!.length
+    println("Status dari java: $javaResponse (Length: $statusLength)")
 }
 
 
