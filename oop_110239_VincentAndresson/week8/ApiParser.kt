@@ -1,5 +1,6 @@
 package oop_110239_VincentAndresson.week8
 
+// week08: (task) implement robust ApiParser using Elvis and requireNotNull
 class ApiParser {
 
     fun parseProduct(rawJson: Map<String, Any?>): Product? {
@@ -25,7 +26,7 @@ class ApiParser {
             is Electronic -> product.id
             is Clothing -> product.id
         }
-        val trxId = JavaPaymentService.processPayment(id)!! // pakai !!
+        val trxId = JavaPaymentService.processPayment(id)!! //
         println("Transaction ID: $trxId")
     }
 }
