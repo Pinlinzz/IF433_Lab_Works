@@ -1,7 +1,6 @@
 package oop_110239_VincentAndresson.week9
 
 fun main () {
-    fun main() {
         val tradeHistory = listOf(
             TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
             TradeLog("ETHUSDT", "SHORT", 10, -5.2, "CLOSED"),
@@ -33,4 +32,3 @@ fun main () {
         worstPerformersString.forEach { println(it) }
         println("\nUnique Pairs Traded: $uniquePairs")
     }
-}
