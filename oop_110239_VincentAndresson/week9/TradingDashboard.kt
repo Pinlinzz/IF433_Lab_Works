@@ -2,8 +2,6 @@ package oop_110239_VincentAndresson.week9
 
 fun main () {
     fun main() {
-        // --- Langkah 2: Inisialisasi Data Uji (Checkpoint 11) ---
-        // Syarat: Minimal 6 data, campuran OPEN/CLOSED, ROE positif/negatif, minimal 2 koin berbeda.
         val tradeHistory = listOf(
             TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
             TradeLog("ETHUSDT", "SHORT", 10, -5.2, "CLOSED"),
@@ -12,4 +10,6 @@ fun main () {
             TradeLog("ETHUSDT", "LONG", 15, 12.0, "OPEN"),
             TradeLog("DOGEUSDT", "LONG", 10, -10.0, "CLOSED")
         )
+        val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
+    }
 }
