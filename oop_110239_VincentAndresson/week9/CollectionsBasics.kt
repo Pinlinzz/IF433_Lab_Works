@@ -13,13 +13,13 @@ fun main() {
     scores[0] = 88
     println("Mutable List : $scores")
 
-    println("\n=== TEST SET ===") [cite: 29]
-    val uniqueNumbers = setOf(1, 2, 2, 3, 3, 4) [cite: 30]
+    println("\n=== TEST SET ===")
+    val uniqueNumbers = setOf(1, 2, 2, 3, 3, 4)
     println("Unique Numbers (Set): $uniqueNumbers") // Duplikat hilang [cite: 31]
 
-    val activeUsers = mutableSetOf("UserA", "UserB") [cite: 32]
-    activeUsers.add("UserC") [cite: 33]
+    val activeUsers = mutableSetOf("UserA", "UserB")
+    activeUsers.add("UserC")
     activeUsers.add("UserA") // Diabaikan karena sudah ada [cite: 34]
-    println("Active Users: $activeUsers") [cite: 35]
+    println("Active Users: $activeUsers")
 
 }
