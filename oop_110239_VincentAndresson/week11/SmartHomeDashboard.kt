@@ -23,14 +23,12 @@ fun main() {
     }
     homeDevices.add(acUnit)
     homeDevices.add(SmartDevice("Picolo's Auto Feeder", "Pet Care", true, 10))
-
     println("\n=== PENGECEKAN KAMERA ===")
 
     val searchResult = homeDevices.find { it.category == "Camera" }
     searchResult?.let {
         println(it.diagnose())
     }
-
     println("\n=== SUMMARY DASHBOARD ===")
 
     with(homeDevices) {
@@ -39,6 +37,9 @@ fun main() {
 
     val totalPower = homeDevices.run { sumOf { it.powerLoad } }
     println("Total Konsumsi Daya: $totalPower Watt\n")
-
     println("=== FULL DIAGNOSTICS ===")
+
+    homeDevices.forEach {
+        println(it.diagnose())
+    }
 }
