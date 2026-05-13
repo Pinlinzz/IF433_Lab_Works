@@ -8,8 +8,9 @@ fun main() {
     coinRepo.add(Coin("ETH", 1.2))
     coinRepo.add(Coin("USDT", 500.0))
 
-    // Uji coba fungsi pencarian dari Checkpoint 14
     println("\n[UJI PENCARIAN]")
     val searchResult = coinRepo.searchByName("ETH")
     println("Hasil cari 'ETH': $searchResult")
+
+    val response = ApiResponse("200 OK", coinRepo.getAll())
 }
