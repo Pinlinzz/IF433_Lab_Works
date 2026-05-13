@@ -1,4 +1,4 @@
-package oop_110239_VincentAndresson.week10
+package oop_110239_VincentAndresson.week11
 
 fun main() {
     println("=== TEST LET FUNCTION ===")
@@ -9,6 +9,12 @@ fun main() {
         println("Nama terdeteksi: $it") // 'it' merujuk pada name
         it.length // Mengembalikan nilai expression terakhir
     }
-
     println("Panjang nama: $length")
+
+    println("\n=== TEST RUN FUNCTION ===")
+    val result = "Kotlin".run {
+        println("Memproses kata: ${this}") // 'this' bisa dihilangkan (implicit)
+        this.length * 2
+    }
+    println("Hasil kalkulasi run: $result")
 }

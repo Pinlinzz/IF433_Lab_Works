@@ -1,4 +1,4 @@
-package oop_110239_VincentAndresson.week10
+package oop_110239_VincentAndresson.week11
 
 fun main() {
     println("=== TEST EXTENSION FUNCTIONS ===")
