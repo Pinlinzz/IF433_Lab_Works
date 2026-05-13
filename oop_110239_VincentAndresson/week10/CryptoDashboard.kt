@@ -27,4 +27,6 @@ fun main() {
     txRepo.getAll().forEach { tx ->
         println("ID Transaksi: ${tx.id} | Jumlah: ${tx.amount}")
     }
+
+    println("\n(LOG) Pengujian Selesai: Pipeline arsitektur berjalan tanpa error tipe data!")
 }
