@@ -13,4 +13,9 @@ fun main() {
     println("Hasil cari 'ETH': $searchResult")
 
     val response = ApiResponse("200 OK", coinRepo.getAll())
+
+    println("\n[DATA KOIN - STATUS API: ${response.status}]")
+    response.data.forEach { coin ->
+        println("Koin: ${coin.name} | Saldo: ${coin.balance}")
+    }
 }
