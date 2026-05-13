@@ -26,4 +26,11 @@ fun main() {
 
     println("\n=== PENGECEKAN KAMERA ===")
 
+    val searchResult = homeDevices.find { it.category == "Camera" }
+    searchResult?.let {
+        println(it.diagnose())
+    }
+
+    println("\n=== SUMMARY DASHBOARD ===")
+
 }
