@@ -33,4 +33,7 @@ fun main() {
 
     println("\n=== SUMMARY DASHBOARD ===")
 
+    with(homeDevices) {
+        println("Total Perangkat Terdaftar: ${this.size}")
+    }
 }
