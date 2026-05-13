@@ -11,4 +11,9 @@ class WalletRepository<T : Any> {
         return items
     }
 
+    fun searchByName(searchName: String): T? {
+         NamedEntity
+        return items.find { it is NamedEntity && it.name == searchName }
+    }
+
 }
