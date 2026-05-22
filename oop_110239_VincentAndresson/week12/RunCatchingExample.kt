@@ -19,6 +19,6 @@ fun main() {
     }.onSuccess { v ->
         println("Berhasil dikonversi: $v")
     }.onFailure { e ->
-        println("Gagal konversi: ${e.message}")
+        println("Gagal konverwsi: ${e.message}")
     }
 }
