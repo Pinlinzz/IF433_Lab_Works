@@ -46,3 +46,15 @@ fun loadTrades(path: String): List<TradeRecord> {
         emptyList()
     }
 }
+
+fun main() {
+    val mockTrades = listOf(
+        TradeRecord(1, "BTCUSDT", "Long", 1000.0, 150.5),
+        TradeRecord(2, "ETHUSDT", "Short", 500.0, -20.0)
+    )
+    val filePath = "crypto_trades.csv"
+
+    println("=== STARTING LOGGER PIPELINE ===")
+    saveTrades(mockTrades, filePath)
+    println("Mock data berhasil disimpan.")
+}
