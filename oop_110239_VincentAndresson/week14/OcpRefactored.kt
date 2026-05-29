@@ -1,6 +1,6 @@
 package oop_110239_VincentAndresson.week14
 
-interface DiscounStrategy {
+interface DiscountStrategy {
     fun apply(price: Double) : Double
 }
 
@@ -10,4 +10,8 @@ class StudentDiscount : DiscountStrategy {
 
 class MemberDiscount : DiscountStrategy {
     override fun apply(price: Double) = price * 0.85
+}
+
+class SafeDiscountCalculator(private val strategy: DiscountStrategy) {
+    fun calculate(price: Double) = strategy.apply(price)
 }
